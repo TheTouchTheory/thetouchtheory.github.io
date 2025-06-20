@@ -9,39 +9,7 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Female Dolls Page -->
-  <url>
-    <loc>https://thetouchtheory.github.io/#female</loc>
-    <lastmod>2025-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Male Dolls Page -->
-  <url>
-    <loc>https://thetouchtheory.github.io/#male</loc>
-    <lastmod>2025-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Trans Dolls Page -->
-  <url>
-    <loc>https://thetouchtheory.github.io/#trans</loc>
-    <lastmod>2025-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Lovense Toys Page -->
-  <url>
-    <loc>https://thetouchtheory.github.io/#lovense</loc>
-    <lastmod>2025-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blog Section -->
+  <!-- Blog Index Page -->
   <url>
     <loc>https://thetouchtheory.github.io/blog/</loc>
     <lastmod>2025-06-20</lastmod>
@@ -49,24 +17,56 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Blog Posts on Medium -->
+  <!-- Female Dolls Section (Anchor) -->
+  <url>
+    <loc>https://thetouchtheory.github.io/#female</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Male Dolls Section (Anchor) -->
+  <url>
+    <loc>https://thetouchtheory.github.io/#male</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Trans Dolls Section (Anchor) -->
+  <url>
+    <loc>https://thetouchtheory.github.io/#trans</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Lovense Toys Section (Anchor) -->
+  <url>
+    <loc>https://thetouchtheory.github.io/#lovense</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Medium Blog Posts (External) -->
   <url>
     <loc>https://medium.com/@touchtheory/sexual-self-care-why-its-important-and-how-to-start-4e2d140c99ed</loc>
     <lastmod>2025-05-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medium.com/@touchtheory/3-things-you-should-know-about-the-joy-of-self-pleasure-520515ed0ec8</loc>
     <lastmod>2025-04-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://medium.com/@touchtheory/is-lush-4-worth-it-de7642766273</loc>
     <lastmod>2025-06-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
