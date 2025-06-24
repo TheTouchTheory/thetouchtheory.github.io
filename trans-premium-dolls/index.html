@@ -19,11 +19,11 @@
   <meta property="og:image" content="https://spartanlover.com/cdn/shop/files/trans-premium-silicone-Doll-Kyra.webp">
 
   <!-- Twitter Meta -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://thetouchtheory.github.io/trans-premium-dolls/">
-  <meta property="twitter:title" content="Premium Trans Sex Dolls | Realistic, Inclusive Companions for Every Identity">
-  <meta property="twitter:description" content="Lifelike, inclusive trans dolls for every desire. Crafted with care and shipped with discretion.">
-  <meta property="twitter:image" content="https://spartanlover.com/cdn/shop/files/trans-premium-silicone-Doll-Kyra.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://thetouchtheory.github.io/trans-premium-dolls/">
+  <meta name="twitter:title" content="Premium Trans Sex Dolls | Realistic, Inclusive Companions for Every Identity">
+  <meta name="twitter:description" content="Lifelike, inclusive trans dolls for every desire. Crafted with care and shipped with discretion.">
+  <meta name="twitter:image" content="https://spartanlover.com/cdn/shop/files/trans-premium-silicone-Doll-Kyra.webp">
 
   <link rel="canonical" href="https://thetouchtheory.github.io/trans-premium-dolls/" />
 
@@ -124,6 +124,8 @@
     .swiper-slide img {
       width: 100%;
       max-width: 300px;
+      height: auto;
+      object-fit: cover;
       border-radius: 16px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
@@ -155,57 +157,53 @@
     <p>For Trans, Non-Binary, and Exploring Souls Seeking Authentic Pleasure</p>
   </header>
 
-<main class="container">
-  <!-- Swiper Carousel -->
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <!-- Kyra Slide -->
-      <div class="swiper-slide">
-        <a href="https://spartanlover.com/collections/trans-sex-dolls?aff=143"
-           target="_blank" rel="noopener noreferrer">
-          <img src="/trans-premium-dolls/Trans-silicone-premium-Doll-Kyra.webp"
-               alt="Premium Trans Silicone Doll - Kyra"
-               loading="lazy" />
-          <h3>Kyra</h3>
-        </a>
+  <main class="container">
+    <!-- Swiper Carousel -->
+    <div class="swiper" aria-label="Carousel of Premium Trans Dolls">
+      <div class="swiper-wrapper">
+        <!-- Kyra Slide -->
+        <div class="swiper-slide">
+          <a href="https://spartanlover.com/collections/trans-sex-dolls?aff=143" target="_blank" rel="noopener noreferrer">
+            <img src="/trans-premium-dolls/Trans-silicone-premium-Doll-Kyra.webp"
+                 alt="Premium Trans Silicone Doll Kyra"
+                 loading="lazy"
+                 fetchpriority="low" />
+            <h3>Kyra</h3>
+          </a>
+        </div>
+
+        <!-- Samy Slide -->
+        <div class="swiper-slide">
+          <a href="https://spartanlover.com/collections/trans-sex-dolls?aff=143" target="_blank" rel="noopener noreferrer">
+            <img src="/trans-premium-dolls/Trans-Sexy-silicone-Doll-Samy-48.webp"
+                 alt="Sexy Trans Silicone Doll Samy"
+                 loading="lazy"
+                 fetchpriority="low" />
+            <h3>Samy</h3>
+          </a>
+        </div>
+
+        <!-- Kyra (alt) Slide -->
+        <div class="swiper-slide">
+          <a href="https://spartanlover.com/collections/trans-sex-dolls?aff=143" target="_blank" rel="noopener noreferrer">
+            <img src="/trans-premium-dolls/Trans-premium-silicone-Doll-Kyra.webp"
+                 alt="Alternate View of Trans Silicone Doll Kyra"
+                 loading="lazy"
+                 fetchpriority="low" />
+            <h3>Kyra</h3>
+          </a>
+        </div>
       </div>
 
-      <!-- Samy Slide -->
-      <div class="swiper-slide">
-        <a href="https://spartanlover.com/collections/trans-sex-dolls?aff=143"
-           target="_blank" rel="noopener noreferrer">
-          <img src="/trans-premium-dolls/Trans-Sexy-silicone-Doll-Samy-48.webp"
-               alt="Sexy Trans Silicone Doll - Samy"
-               loading="lazy" />
-          <h3>Samy</h3>
-        </a>
-      </div>
+      <!-- Pagination Dots -->
+      <div class="swiper-pagination"></div>
     </div>
 
-    <!-- Kyra Slide -->
-      <div class="swiper-slide">
-        <a href="https://spartanlover.com/collections/trans-sex-dolls?aff=143"
-           target="_blank" rel="noopener noreferrer">
-          <img src="/trans-premium-dolls/Trans-premium-silicone-Doll-Kyra.webp"
-               alt="Sexy Trans Silicone Doll - Kyra"
-               loading="lazy" />
-          <h3>Kyra</h3>
-        </a>
-      </div>
-    </div>
-
-    <!-- Pagination Dots -->
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- No-JavaScript Fallback -->
-  <noscript>
-    <p style="color: #f9a8d4; margin-top: 1rem;">
-      JavaScript is disabled in your browser. Please enable it to explore our premium trans dolls.
-    </p>
-  </noscript>
-</main>
-
+    <noscript>
+      <p style="color: #f9a8d4; margin-top: 1rem;">
+        JavaScript is disabled in your browser. Please enable it to explore our premium trans dolls.
+      </p>
+    </noscript>
 
     <section>
       <h2>A Real Experience for Real People</h2>
@@ -248,7 +246,9 @@
       loop: true,
       spaceBetween: 30,
       slidesPerView: 1,
-      lazy: true,
+      lazy: {
+        loadPrevNext: true,
+      },
       autoplay: {
         delay: 3500,
         disableOnInteraction: false,
