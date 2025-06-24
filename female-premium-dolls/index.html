@@ -8,26 +8,22 @@
   <!-- Primary Meta Tags -->
   <meta name="title" content="Premium Female Sex Dolls | Realistic AI Silicone Dolls | Touch Theory">
   <meta name="description" content="Explore lifelike female sex dolls from SiliconWives. Realistic, AI-compatible, and fully customizable with discreet shipping.">
-
-  <!-- Keywords -->
   <meta name="keywords" content="premium female sex dolls, realistic sex dolls, silicone sex dolls, TPE dolls, lifelike sex dolls, AI sex dolls, custom sex dolls, discreet delivery dolls, Touch Theory, SiliconWives dolls">
-
-  <!-- Author -->
   <meta name="author" content="Touch Theory">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thetouchtheory.github.io/female-premium-dolls/">
   <meta property="og:title" content="Premium Female Sex Dolls | Realistic AI Silicone Dolls">
   <meta property="og:description" content="Shop high-end female sex dolls from SiliconWives. Realistic design, AI features, fast and private delivery.">
-  <meta property="og:image" content="https://thetouchtheory.github.io/female-premium-dolls/mostrealsiliconwives.webp">
+  <meta property="og:image" content="https://thetouchtheory.github.io/female-premium-dolls/Lilith-Horny-Demon-Doll.webp">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://thetouchtheory.github.io/female-premium-dolls/">
   <meta property="twitter:title" content="Premium Female Sex Dolls | Realistic AI Silicone Dolls">
   <meta property="twitter:description" content="Lifelike AI-enhanced dolls designed for the modern man. Customizable, secure, and discreet.">
-  <meta property="twitter:image" content="https://thetouchtheory.github.io/female-premium-dolls/mostrealsiliconwives.webp">
+  <meta property="twitter:image" content="https://thetouchtheory.github.io/female-premium-dolls/Lilith-Horny-Demon-Doll.webp">
 
   <link rel="canonical" href="https://thetouchtheory.github.io/female-premium-dolls/" />
   <link rel="stylesheet" href="/style.css" />
@@ -64,11 +60,50 @@
       padding: 40px 20px;
     }
 
-    .hero-image {
-      width: 100%;
+    /* Carousel Styles */
+    .carousel {
+      position: relative;
+      overflow: hidden;
       border-radius: 16px;
       margin-bottom: 2rem;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .carousel-track img {
+      min-width: 100%;
+      height: auto;
       object-fit: cover;
+      display: block;
+    }
+
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: #facc15;
+      border: none;
+      padding: 10px;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 1;
+      border-radius: 50%;
+    }
+
+    .carousel-button:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .carousel-button.prev {
+      left: 10px;
+    }
+
+    .carousel-button.next {
+      right: 10px;
     }
 
     h2 {
@@ -127,7 +162,19 @@
   </header>
 
   <main class="container">
-    <img src="/female-premium-dolls/mostrealsiliconwives.webp" alt="Hyper-realistic premium female sex doll from SiliconWives" class="hero-image" loading="lazy" />
+
+    <!-- Image Carousel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <img src="/female-premium-dolls/Lilith-Horny-Demon-Doll.webp" alt="Lilith - Horny Demon Sex Doll" loading="lazy" />
+        <img src="/female-premium-dolls/Sook-Divine-Maiden-Doll.webp" alt="Sook - Divine Maiden Silicone Doll" loading="lazy" />
+        <img src="/female-premium-dolls/Lace-Soft-Curvy-silicone-Doll.webp" alt="Lace - Soft Curvy Silicone Sex Doll" loading="lazy" />
+        <img src="/female-premium-dolls/Circe-Hot-Sorceress-Doll.webp" alt="Circe - Hot Sorceress AI Doll" loading="lazy" />
+        <img src="/female-premium-dolls/Megara-Frisky-Black-Doll.webp" alt="Megara - Frisky Black Lifelike Doll" loading="lazy" />
+      </div>
+      <button class="carousel-button prev" aria-label="Previous image">&#10094;</button>
+      <button class="carousel-button next" aria-label="Next image">&#10095;</button>
+    </div>
 
     <section>
       <h2>Realistic Design & Materials</h2>
@@ -157,12 +204,7 @@
       </p>
     </section>
 
-    <a
-      href="https://www.siliconwives.com/?ref=luxurywivedolls"
-      class="cta-button"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href="https://www.siliconwives.com/?ref=luxurywivedolls" class="cta-button" target="_blank" rel="noopener noreferrer">
       🔥 Explore Premium Dolls →
     </a>
 
@@ -173,5 +215,32 @@
   <footer>
     &copy; 2025 Touch Theory. All rights reserved. | <a href="/privacy" style="color:#94a3b8;">Privacy Policy</a>
   </footer>
+
+  <!-- Carousel Script -->
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel-button.next');
+    const prevButton = document.querySelector('.carousel-button.prev');
+    let index = 0;
+
+    function updateCarousel() {
+      const width = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${index * width}px)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+      index = (index + 1) % slides.length;
+      updateCarousel();
+    });
+
+    prevButton.addEventListener('click', () => {
+      index = (index - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+
+    window.addEventListener('resize', updateCarousel);
+    window.addEventListener('load', updateCarousel);
+  </script>
 </body>
 </html>
