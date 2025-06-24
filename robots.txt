@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-# Disallow non-public directories (if any)
-Disallow: /assets/
-Disallow: /drafts/
-
-# Sitemap location
 Sitemap: https://thetouchtheory.github.io/sitemap.xml
