@@ -33,6 +33,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Trans Premium Dolls Page -->
+  <url>
+    <loc>https://thetouchtheory.github.io/trans-premium-dolls/</loc>
+    <lastmod>2025-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog Post 1 -->
   <url>
     <loc>https://thetouchtheory.github.io/blog/self-care-and-sexual-wellness/</loc>
