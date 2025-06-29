@@ -100,6 +100,28 @@
       padding: 0 0.15rem;
       border-radius: 3px;
     }
+    /* Link styles */
+    .links {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e0e0e0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-weight: 600;
+    }
+    .links a {
+      color: #c2185b;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    .links a:hover,
+    .links a:focus {
+      color: #880e4f;
+      outline: none;
+      text-decoration: underline;
+    }
 
     /* Responsive */
     @media (max-width: 600px) {
@@ -112,6 +134,9 @@
       }
       h2 {
         font-size: 1.4rem;
+      }
+      .links {
+        flex-direction: column;
       }
     }
   </style>
@@ -138,6 +163,10 @@
         <p><em>This is your invitation to reconnect. This is your permission to feel.</em></p>
         <p><strong>Welcome to Touch Theory.</strong> Your journey back to yourself starts here.</p>
       </section>
+      <nav class="links" aria-label="Additional navigation">
+        <a href="https://thetouchtheory.github.io/blog/index.html" title="Explore articles on sexual wellness, intimacy, and self-pleasure">Explore our blog</a>
+        <a href="https://thetouchtheory.github.io/" title="Visit the Touch Theory homepage">Visit Touch Theory homepage</a>
+      </nav>
     </article>
   </main>
 </body>
