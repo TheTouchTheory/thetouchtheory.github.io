@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Touch Theory Sex Hub Blog | Sexual Wellness & Self-Care</title>
-  <meta name="description" content="Empowering articles about sexual self-care, pleasure, and holistic wellness from Touch Theory.">
-  <meta name="keywords" content="sexual self-care, sexual wellness, holistic health, sex positivity, mindful sexuality, blog">
-  <link rel="canonical" href="https://thetouchtheory.github.io/blog/index.html">
+  <meta name="description" content="Empowering articles about sexual self-care, pleasure, and holistic wellness from Touch Theory. Discover tips, insights, and resources for sexual wellness and mindful intimacy." />
+  <meta name="keywords" content="sexual self-care, sexual wellness, holistic health, sex positivity, mindful sexuality, sexual empowerment, self-love, pleasure, intimacy, sexual self-awareness" />
+  <meta name="author" content="Touch Theory" />
+  <link rel="canonical" href="https://thetouchtheory.github.io/blog/index.html" />
+  <link rel="alternate" href="https://thetouchtheory.github.io/blog/index.html" hreflang="en" />
   <style>
-    * {
+    *, *::before, *::after {
       box-sizing: border-box;
     }
     body {
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #fafafa;
+      background-color: #fafafa;
       color: #333;
       line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
     header {
       background-color: #b52e6c;
@@ -26,28 +30,40 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
     header h1 {
       margin: 0;
       font-size: 1.8rem;
+      font-weight: 700;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
     nav a {
       color: #fff;
-      margin-left: 1rem;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
-    nav a:hover {
+    nav a:hover,
+    nav a:focus {
+      color: #f8bbd0;
       text-decoration: underline;
+      outline: none;
     }
     main {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 0 1rem 3rem;
     }
     h2 {
       color: #b52e6c;
       margin-bottom: 1rem;
+      font-weight: 700;
     }
     article {
       background: #fff;
@@ -55,21 +71,28 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
       padding: 1.5rem;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    article:hover {
+    article:hover,
+    article:focus-within {
       transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
     }
     article h3 {
       margin-top: 0;
       font-size: 1.4rem;
+      font-weight: 700;
     }
     article a {
       color: #b52e6c;
       text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
-    article a:hover {
+    article a:hover,
+    article a:focus {
       text-decoration: underline;
+      outline: none;
     }
     footer {
       background: #333;
@@ -77,6 +100,25 @@
       text-align: center;
       padding: 1rem;
       margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+    .social-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover,
+    .social-links a:focus {
+      color: #f8bbd0;
+      outline: none;
+      text-decoration: underline;
     }
     @media (max-width: 600px) {
       header {
@@ -85,33 +127,41 @@
       }
       nav {
         margin-top: 0.5rem;
+        gap: 0.75rem;
+      }
+      main {
+        margin: 1rem auto;
+        padding: 0 0.75rem 2rem;
       }
     }
   </style>
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>Touch Theory Sex Hub</h1>
-    <nav>
-      <a href="/blog/index.html">Home</a>
-      <a href="/blog/self-care-and-sexual-wellness.html">Posts</a>
+    <nav role="navigation" aria-label="Primary Navigation">
+      <a href="https://thetouchtheory.github.io/" title="Go to Touch Theory homepage">Home</a>
+      <a href="/blog/self-care-and-sexual-wellness.html" title="Read blog posts about sexual wellness">Posts</a>
+      <a href="https://www.facebook.com/YourLifeNeeds/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/touchtheoryy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+      <a href="https://medium.com/@touchtheory" target="_blank" rel="noopener noreferrer" aria-label="Medium">Medium</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Latest Articles</h2>
+  <main role="main">
+    <section aria-labelledby="latest-articles">
+      <h2 id="latest-articles">Latest Articles</h2>
       <article>
-        <h3><a href="/blog/self-care-and-sexual-wellness.html">Embracing Your Sexual Self-Care Journey</a></h3>
+        <h3><a href="/blog/self-care-and-sexual-wellness.html" title="Read Embracing Your Sexual Self-Care Journey article">Embracing Your Sexual Self-Care Journey</a></h3>
         <p>Discover why sexual self-care is a radical act of self-love, how to get started, and practical tips for holistic wellness.</p>
-        <a href="/blog/self-care-and-sexual-wellness.html">Read more →</a>
+        <a href="/blog/self-care-and-sexual-wellness.html" aria-label="Read more about Embracing Your Sexual Self-Care Journey">Read more →</a>
       </article>
       <!-- Add more <article> blocks here in the future -->
     </section>
   </main>
 
-  <footer>
-  © 2025 Touch Theory. All rights reserved.
+  <footer role="contentinfo">
+    &copy; 2025 Touch Theory. All rights reserved.
   </footer>
 </body>
 </html>
